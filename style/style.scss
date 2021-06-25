@@ -16,9 +16,10 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-
+    
     
     &__title {
+        color:rgb(239, 248, 232);
         font-size: 20vh;
         margin-top: -21vh;
         -webkit-text-stroke-width: 2px;
@@ -35,10 +36,12 @@
         font-size: 3.5vh;
         font-weight: 500;
         margin-top: -19vh;
+        margin-bottom: 19vh;;
         -webkit-text-stroke-width: 0.3px;
     }
 
     &__start-button {
+
         z-index: 1;
         width: 3vw;
         height: 3vw;
@@ -46,6 +49,7 @@
         border:none;
         background-color: antiquewhite;
         color: rgb(143, 73, 64);
+        color: none;
         box-shadow: 0 0 200px antiquewhite;
         cursor: pointer;
         display: flex;
@@ -54,8 +58,8 @@
         &:hover {
             // box-shadow: 0 0 50px antiquewhite;
             box-shadow: 0 0 50px red;
-            text-shadow: 0 5px 20px rgb(88, 46, 40);
-            color: rgb(255, 255, 255);
+            text-shadow: 0 5px 10px red,0 -5px 10px red;
+            color: rgb(255, 255, 246);
 
         }
     }

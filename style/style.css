@@ -26,6 +26,7 @@
 }
 
 .landing__title {
+  color: #eff8e8;
   font-size: 20vh;
   margin-top: -21vh;
   -webkit-text-stroke-width: 2px;
@@ -48,6 +49,7 @@
   font-size: 3.5vh;
   font-weight: 500;
   margin-top: -19vh;
+  margin-bottom: 19vh;
   -webkit-text-stroke-width: 0.3px;
 }
 
@@ -59,6 +61,7 @@
   border: none;
   background-color: antiquewhite;
   color: #8f4940;
+  color: none;
   -webkit-box-shadow: 0 0 200px antiquewhite;
           box-shadow: 0 0 200px antiquewhite;
   cursor: pointer;
@@ -76,8 +79,8 @@
 .landing__start-button:hover {
   -webkit-box-shadow: 0 0 50px red;
           box-shadow: 0 0 50px red;
-  text-shadow: 0 5px 20px #582e28;
-  color: white;
+  text-shadow: 0 5px 10px red,0 -5px 10px red;
+  color: #fffff6;
 }
 
 .landing__ship-image {
