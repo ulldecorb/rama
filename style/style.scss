@@ -1,0 +1,112 @@
+
+
+.landing {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/potw2039a.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    color:rgb(239, 248, 232);
+    text-shadow: 0 0 50px green;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    
+    &__title {
+        font-size: 20vh;
+        margin-top: -21vh;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 0.349);
+    }
+    
+    &__authors {
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 0.349);
+        width: 27vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        font-size: 3.5vh;
+        font-weight: 500;
+        margin-top: -19vh;
+        -webkit-text-stroke-width: 0.3px;
+    }
+
+    &__start-button {
+        z-index: 1;
+        width: 3vw;
+        height: 3vw;
+        border-radius: 50%;
+        border:none;
+        background-color: antiquewhite;
+        color: rgb(143, 73, 64);
+        box-shadow: 0 0 200px antiquewhite;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            // box-shadow: 0 0 50px antiquewhite;
+            box-shadow: 0 0 50px red;
+            text-shadow: 0 5px 20px rgb(88, 46, 40);
+            color: rgb(255, 255, 255);
+
+        }
+    }
+
+    &__ship-image {
+        height: 200px;
+        width: 300px;
+        background-color: rgb(27, 25, 22);
+        border-radius: 100px;
+        margin: 3vw 0;
+    }
+
+    &__ship {
+        height: 00px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__definition {
+        position: absolute;
+        color: antiquewhite;
+        bottom: 20px;
+        font-size: 2em;
+        cursor: pointer;
+
+        -webkit-text-stroke-width: 0px;
+
+
+    }
+}
+
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+        margin-bottom: 5vh;
+        width:100px;
+        height:100px;
+        border: 1px solid red;
+        -webkit-animation: rotating 2s linear infinite;
+    }
+
+.corrector {
+    height:400px;
+}
