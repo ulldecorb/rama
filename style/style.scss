@@ -56,7 +56,6 @@
         justify-content: center;
         align-items: center;
         &:hover {
-            // box-shadow: 0 0 50px antiquewhite;
             box-shadow: 0 0 50px red;
             text-shadow: 0 5px 10px red,0 -5px 10px red;
             color: rgb(255, 255, 246);
@@ -73,7 +72,7 @@
     }
 
     &__ship {
-        height: 00px;
+        height: 200px;
         width: 200px;
         display: flex;
         justify-content: center;
@@ -86,11 +85,12 @@
         bottom: 20px;
         font-size: 2em;
         cursor: pointer;
-
+        opacity: 0.6;
         -webkit-text-stroke-width: 0px;
 
 
     }
+
 }
 
 
@@ -103,13 +103,54 @@
     }
 }
 
-.rotating {
-        margin-bottom: 5vh;
-        width:100px;
-        height:100px;
-        border: 1px solid red;
-        -webkit-animation: rotating 2s linear infinite;
+@-webkit-keyframes rotating__b {
+    from{
+        -webkit-transform: rotate(45deg);
     }
+    to{
+        -webkit-transform: rotate(405deg);
+    }
+}
+
+@-webkit-keyframes rotating__c {
+    from{
+        -webkit-transform: rotate(360deg);
+    }
+    to{
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes rotating__d {
+    from{
+        -webkit-transform: rotate(405deg);
+    }
+    to{
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+.rotating {
+    position: absolute;
+    bottom: 350px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    -webkit-animation: rotating 2s linear infinite;
+}
+    
+.rotating__b {
+    -webkit-animation: front2 2s linear infinite;
+    background-color: red;
+}
+
+.rotating__c {
+    -webkit-animation: back1 2s linear infinite;
+}
+
+.rotating__d {
+    -webkit-animation: back2 2s linear infinite;
+}
 
 .corrector {
     height:400px;

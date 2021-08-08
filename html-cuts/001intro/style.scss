@@ -1,0 +1,42 @@
+body {
+    // background-color: red;
+    color:yellow;
+}
+
+.museum {
+    position:absolute;
+    top:0;left:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    // overflow: scroll;
+    
+    // background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
+    &__strip-background {
+        height: 140vh;
+        margin: 0 auto;
+        width:100vw;
+        // position: absolute;
+        background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__strip01 {
+        height:200px;
+        width:80vw;
+        margin: 5px auto;
+        background-color: #4090FF;
+        opacity:0.5;
+    }
+}
+
+.strip {
+    border-color: 2px solid #000;
+}
