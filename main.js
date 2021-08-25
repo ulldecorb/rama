@@ -1,3 +1,4 @@
+
 const landing = document.querySelector('.landing');
 const button = document.querySelector("button");
 

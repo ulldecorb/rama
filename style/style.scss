@@ -27,6 +27,7 @@
     }  
 
     &__title {
+        color:rgb(239, 248, 232);
         font-size: 20vh;
         margin-top: -21vh;
         -webkit-text-stroke-width: 2px;
@@ -44,10 +45,12 @@
         font-weight: 500;
         text-align: center;
         margin-top: -19vh;
+        margin-bottom: 19vh;;
         -webkit-text-stroke-width: 0.3px;
     }
 
     &__start-button {
+
         z-index: 1;
         width: 3vw;
         height: 3vw;
@@ -62,7 +65,6 @@
         justify-content: center;
         align-items: center;
         &:hover {
-            // box-shadow: 0 0 50px antiquewhite;
             box-shadow: 0 0 50px red;
             text-shadow: 0 5px 20px rgb(88, 46, 40);
             color: rgb(255, 255, 255);
@@ -70,7 +72,7 @@
     }
 
     &__ship {
-        height: 00px;
+        height: 200px;
         width: 200px;
         display: flex;
         justify-content: center;
@@ -83,9 +85,10 @@
         bottom: 20px;
         font-size: 2em;
         cursor: pointer;
-
+        opacity: 0.6;
         -webkit-text-stroke-width: 0px;
     }
+
 }
 
 @-webkit-keyframes rotating {
