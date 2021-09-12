@@ -9,10 +9,24 @@
 </head>
 <body>
     <section class="museum">
+        
         <div class="museum__background"></div>
         <div class="museum__strip-background"></div>
+        
+        <div class="museum__strip01 strip"
+        onmouseover="torch.display = 'block'"
+        onmouseout="torch.display = 'none'"
+        onmousemove="followTorch()">
+        </div>  
+        <div id="torch" class="museum__torch">
+            <img src="https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg" 
+            alt="illustration of where is wally" 
+            class="torch__image" 
+            id="torch-image">
+        </div>
+
         <div class="museum__strip01 strip"></div>
-        <div class="museum__strip01 strip"></div>
+        
         <div class="museum__strip01 strip"></div>
         <div class="museum__strip01 strip"></div>
         <div class="museum__strip01 strip"></div>
@@ -24,16 +38,6 @@
         <div class="museum__strip01 strip"></div>
         <div class="museum__strip01 strip"></div>
     </section>
-    
-    
-    <div id="siguerratones"></div>
-    <div id="objetivo"
-         onmouseover="siguerratones.display = 'block'"
-         onmouseout="siguerratones.display = 'none'"
-         onmousemove="seguir()">
-      <p>Durante el paseo del ratón sobre este DIV el ratón tendrá un "acompañante" siguerratones.</p>
-      <p>Durante el paseo del ratón sobre este DIV el ratón tendrá un "acompañante" siguerratones. </p>
-    </div>
 </body>
 <script src="./main.js"></script>
 </html>
