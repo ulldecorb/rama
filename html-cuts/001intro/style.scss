@@ -98,6 +98,31 @@ body {
         filter: grayscale(100%);
         margin: 0 auto;
     }
+    
+    &__torch {
+        position: absolute;
+        border:20px solid black;
+        color: yellow;
+        // background: url("https://cflvdg.avoz.e s/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        display: none;
+        overflow: hidden;
+        // z-index:-1;
+
+        .torch {
+            &__image {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: url("https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+        }
+    }
 
     &__strip01 {
         height:300px;
@@ -110,32 +135,11 @@ body {
     }
 
     &__strip01:nth-child(3) {
-        background-color: antiquewhite;
+        // background-color: #000;
         background-image: url("https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        opacity: 0.2;    
     }
 }
-
-
-
-
-
-
-#siguerratones {
-    position: absolute;
-    border:20px solid black;
-    color: yellow;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: none;
-    // z-index:-1;
-  }
-  
-  #objetivo {
-    cursor: none;
-    background: orange;
-    height: 200px;
-    width: 100vw;
-    // display:flex;
-    overflow: hidden;
-  }
