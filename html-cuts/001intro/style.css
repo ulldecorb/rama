@@ -17,6 +17,32 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: black;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(126, 126, 126, 0.2);
+  border-radius: 10px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaaaaa;
+  background-color: red;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #aaaaaa;
+  background-color: red;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(75, 75, 75, 0.582);
 }
 
 .museum {
@@ -73,13 +99,12 @@ body {
 
 #siguerratones {
   position: absolute;
-  border: 200px solid black;
+  border: 20px solid black;
   color: yellow;
-  width: 200px;
-  height: 200px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: none;
-  z-index: -1;
 }
 
 #objetivo {
@@ -87,9 +112,6 @@ body {
   background: orange;
   height: 200px;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
