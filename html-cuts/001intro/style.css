@@ -114,10 +114,55 @@ body {
 }
 
 .museum__strip01:nth-child(3) {
+  background-color: #000;
   background-image: url("https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
   opacity: 0.2;
+}
+
+.museum__strip01:nth-child(5) {
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.museum__strip01:nth-child(5):hover .astronaut {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+.museum__strip01:nth-child(5):hover .sky {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+.museum__strip01:nth-child(5) .astronaut {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.museum__strip01:nth-child(5) .sky {
+  height: 300px;
+  width: auto;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.museum__strip01:nth-child(5) .secondAstronaut {
+  position: absolute;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
