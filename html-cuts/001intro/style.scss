@@ -135,11 +135,54 @@ body {
     }
 
     &__strip01:nth-child(3) {
-        // background-color: #000;
+        background-color: #000;
         background-image: url("https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
         opacity: 0.2;    
+    }
+    &__strip01:nth-child(5) {
+        background-color: #000;
+        // background-image: url("https://w7.pngwing.com/pngs/584/138/png-transparent-lunar-surface-interstellar-crossing-lunar-surface-astronaut.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        // background-color:red;
+        // opacity: 0.2;    
+        display:flex;
+        overflow: hidden;
+        
+        &:hover {
+            .astronaut {filter: blur(4px)}
+
+            .sky {filter:blur(0px)}
+        }
+
+        .astronaut {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            // top: 20px;
+            transition: 0.4s;
+            z-index: 1; 
+        }
+        
+        .sky {
+            height: 300px;
+            width: auto;
+            // background-repeat: repeat-x;
+            // background-position: center;
+            // background-size: 100px 100px;
+            filter: blur(2px);
+            // margin: 100px;
+            // position: absolute;
+            transition: 0.4s;
+        }
+
+        .secondAstronaut {
+            position: absolute;
+            z-index: -1;
+        }
     }
 }
