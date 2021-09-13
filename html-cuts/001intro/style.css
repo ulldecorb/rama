@@ -1,5 +1,5 @@
 body {
-  color: yellow;
+  color: #000;
   position: absolute;
   top: 0;
   left: 0;
@@ -63,6 +63,8 @@ body {
 }
 
 .museum__background {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
   margin: 0 auto;
   height: 100vw;
   width: 80vw;
@@ -87,18 +89,17 @@ body {
 .museum__torch {
   position: absolute;
   border: 20px solid black;
-  color: yellow;
+  color: #000;
   width: 10vw;
   height: 10vw;
   border-radius: 50%;
-  display: none;
   overflow: hidden;
 }
 
 .museum__torch .torch__image {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -100px;
+  left: -50px;
   background-image: url("https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -111,6 +112,7 @@ body {
   margin: 3vh auto;
   background-color: #4090FF;
   border: 2px solid #000;
+  overflow: hidden;
 }
 
 .museum__strip01:nth-child(3) {
@@ -124,12 +126,6 @@ body {
 
 .museum__strip01:nth-child(5) {
   background-color: #000;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   overflow: hidden;
 }
 
@@ -143,17 +139,59 @@ body {
           filter: blur(0px);
 }
 
+.museum__strip01:nth-child(5):hover .text:last-of-type {
+  opacity: 1;
+}
+
+.museum__strip01:nth-child(5):hover .text:first-of-type {
+  opacity: 0;
+}
+
 .museum__strip01:nth-child(5) .astronaut {
   height: 200px;
   width: 200px;
   position: absolute;
+  top: 360vh;
+  left: 200px;
+  z-index: 1;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-animation: mymove infinite;
+          animation: mymove infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  z-index: 1;
+}
+
+@-webkit-keyframes mymove {
+  0% {
+    top: 360vh;
+  }
+  50% {
+    top: 363vh;
+  }
+  100% {
+    top: 360vh;
+  }
+}
+
+@keyframes mymove {
+  0% {
+    top: 360vh;
+  }
+  50% {
+    top: 363vh;
+  }
+  100% {
+    top: 360vh;
+  }
 }
 
 .museum__strip01:nth-child(5) .sky {
-  height: 300px;
+  height: auto;
   width: auto;
   -webkit-filter: blur(2px);
           filter: blur(2px);
@@ -161,8 +199,39 @@ body {
   transition: 0.4s;
 }
 
-.museum__strip01:nth-child(5) .secondAstronaut {
+.museum__strip01:nth-child(5) .text {
+  height: 60px;
+  width: 120px;
+  border-radius: 50%;
+  background: whitesmoke;
+  border: 4px solid #000;
   position: absolute;
-  z-index: -1;
+  top: 377vh;
+  left: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  padding: 5px;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.museum__strip01:nth-child(5) .text:first-of-type {
+  opacity: 1;
+  top: 356vh;
+  left: 500px;
+  height: 30px;
 }
 /*# sourceMappingURL=style.css.map */

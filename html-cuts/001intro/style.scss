@@ -1,18 +1,13 @@
 body {
-    color:yellow;
+    color:#000;
     position:absolute;
     top:0;left:0;
-    // background-color: red;
-    // height:100vh;
-    // width:100vw;
-    // overflow: scroll;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
     overflow-x: hidden;
-    // background: linear-gradient(#000, #000 20%, transparent 20%);
 }
 
 ::-webkit-scrollbar {
@@ -25,14 +20,14 @@ body {
         background: rgba(126, 126, 126, 0.2);
         border-radius: 10px;
         transition-duration: 1s;
-
-
+        
+        
         
         &:hover { 
-        // display: block;
-        background: rgb(170, 170, 170);
-        background-color: red;
-    }
+            // display: block;
+            background: rgb(170, 170, 170);
+            background-color: red;
+        }
         
         &:active {
             // display: block;
@@ -40,7 +35,7 @@ body {
             background-color: red;
         }
     }
-
+    
     
     &-track {
         background: rgba(75, 75, 75, 0.582);
@@ -48,74 +43,71 @@ body {
     }
 }
 // ::-webkit-scrollbar-thumb {
-//     // display: none;
-//     // width: 200px;
-//     // height: 100vh;
-// }
-
-
-.museum {
-    // position: absolute;
-    // top: 0;
-    // left: 50%;
-    // transform: translate(0, -50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width:80%;
-
+    //     // display: none;
+    //     // width: 200px;
+    //     // height: 100vh;
+    // }
     
-    // background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
     
-    &__background {
-        // transform: rotate(90deg);
-        margin: 0 auto;
+    .museum {
         // position: absolute;
-        height: 100vw;
-        width:80vw;
-        background-image: url("https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2017/04/the_motion_of_two_million_stars/16900235-1-eng-GB/The_motion_of_two_million_stars_pillars.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        // background-image:  linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-
-    }
-
-    &__strip-background {
-        height: 100vh;
-        width: 80vw;
-        // margin: 0 auto;
-        // position: absolute;
-        background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        filter: grayscale(100%);
-        margin: 0 auto;
-    }
+        // top: 0;
+        // left: 50%;
+        // transform: translate(0, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        width:80%;
+        
+        
+        // background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        
+        &__background {
+            filter: brightness(80%);
+            // transform: rotate(90deg);
+            margin: 0 auto;
+            // position: absolute;
+            height: 100vw;
+            width:80vw;
+            background-image: url("https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2017/04/the_motion_of_two_million_stars/16900235-1-eng-GB/The_motion_of_two_million_stars_pillars.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            // background-image:  linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+            
+        }
+        
+        &__strip-background {
+            height: 100vh;
+            width: 80vw;
+            background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: grayscale(100%);
+            margin: 0 auto;
+            // filter: brightness(30%);
+        }
     
     &__torch {
         position: absolute;
         border:20px solid black;
-        color: yellow;
-        // background: url("https://cflvdg.avoz.e s/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
+        color: #000;
         width: 10vw;
         height: 10vw;
         border-radius: 50%;
-        display: none;
         overflow: hidden;
-        // z-index:-1;
-
+        
         .torch {
             &__image {
                 position: absolute;
-                top: 0;
-                left: 0;
+                top: -100px;
+                left: -50px;
                 background-image: url("https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
                 background-repeat: no-repeat;
                 background-position: center;
@@ -123,15 +115,14 @@ body {
             }
         }
     }
-
+    
     &__strip01 {
         height:300px;
         width:80vw;
         margin: 3vh auto;
-        // border: 0.5vh solid #000;
         background-color: #4090FF;
-        // opacity:0.5;
         border: 2px solid #000;
+        overflow: hidden;
     }
 
     &__strip01:nth-child(3) {
@@ -144,45 +135,74 @@ body {
     }
     &__strip01:nth-child(5) {
         background-color: #000;
-        // background-image: url("https://w7.pngwing.com/pngs/584/138/png-transparent-lunar-surface-interstellar-crossing-lunar-surface-astronaut.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        // background-color:red;
-        // opacity: 0.2;    
-        display:flex;
         overflow: hidden;
         
         &:hover {
             .astronaut {filter: blur(4px)}
 
-            .sky {filter:blur(0px)}
+            .sky {filter:blur(0px);}
+
+            .text:last-of-type {
+                opacity:1;
+            }
+            .text:first-of-type {
+                opacity:0;
+            }
         }
 
         .astronaut {
             height: 200px;
             width: 200px;
             position: absolute;
-            // top: 20px;
-            transition: 0.4s;
+            top: 360vh;
+            left: 200px;
             z-index: 1; 
+            transform: rotateY(180deg);
+            animation: mymove infinite;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            transition: 0.4s;
+            
+        }
+        
+        @keyframes mymove {
+            0% {top: 360vh}
+            50% {top: 363vh}    
+            100% {top: 360vh}    
         }
         
         .sky {
-            height: 300px;
+            height: auto;
             width: auto;
-            // background-repeat: repeat-x;
-            // background-position: center;
-            // background-size: 100px 100px;
             filter: blur(2px);
-            // margin: 100px;
-            // position: absolute;
             transition: 0.4s;
         }
-
-        .secondAstronaut {
+        
+        .text {
+            height: 60px;
+            width: 120px;
+            border-radius: 50%;
+            background: whitesmoke;
+            border:4px solid #000;
             position: absolute;
-            z-index: -1;
+            top: 377vh;
+            left: 1100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity:0;
+            padding:5px;
+            text-align: center;
+            transition: 0.4s;
+            
+            &:first-of-type {
+                opacity:1;
+                top: 356vh;
+                left: 500px;
+                height: 30px;
+
+            }
         }
     }
 }
