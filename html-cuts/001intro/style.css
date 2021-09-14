@@ -160,8 +160,8 @@ body {
           animation: mymove infinite;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -192,9 +192,10 @@ body {
 
 .museum__strip01:nth-child(5) .sky {
   height: auto;
-  width: auto;
+  width: 80vw;
   -webkit-filter: blur(2px);
           filter: blur(2px);
+  background-size: cover;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -233,5 +234,87 @@ body {
   top: 356vh;
   left: 500px;
   height: 30px;
+}
+
+.museum__cinetic {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 300px;
+  width: 80vw;
+  margin: 3vh auto;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.museum__cinetic .cinetic__cinetic-lines {
+  height: 80vh;
+  width: 100vw;
+  background-position: center;
+  background-position: cover;
+  margin: -20vh 0;
+  z-index: 1;
+}
+
+.museum__cinetic .cinetic__cinetic-lines:hover {
+  -webkit-animation: cinetic-move infinite;
+          animation: cinetic-move infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes cinetic-move {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  49.9% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes cinetic-move {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  49.9% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+.museum__cinetic .cinetic__astronaut {
+  max-height: 30vh;
+  width: auto;
+  position: absolute;
+  margin-top: 6vh;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  z-index: 2;
 }
 /*# sourceMappingURL=style.css.map */

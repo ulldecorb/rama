@@ -124,7 +124,7 @@ body {
         border: 2px solid #000;
         overflow: hidden;
     }
-
+    
     &__strip01:nth-child(3) {
         background-color: #000;
         background-image: url("https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
@@ -139,9 +139,9 @@ body {
         
         &:hover {
             .astronaut {filter: blur(4px)}
-
+            
             .sky {filter:blur(0px);}
-
+            
             .text:last-of-type {
                 opacity:1;
             }
@@ -149,7 +149,7 @@ body {
                 opacity:0;
             }
         }
-
+        
         .astronaut {
             height: 200px;
             width: 200px;
@@ -160,7 +160,8 @@ body {
             transform: rotateY(180deg);
             animation: mymove infinite;
             animation-duration: 3s;
-            animation-fill-mode: forwards;
+            transition-timing-function: ease-in;
+            // animation-fill-mode: forwards;
             transition: 0.4s;
             
         }
@@ -173,8 +174,9 @@ body {
         
         .sky {
             height: auto;
-            width: auto;
+            width: 80vw;
             filter: blur(2px);
+            background-size: cover;
             transition: 0.4s;
         }
         
@@ -201,8 +203,57 @@ body {
                 top: 356vh;
                 left: 500px;
                 height: 30px;
-
+                
             }
         }
+    }
+    
+    &__cinetic {
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height:300px;
+        width:80vw;
+        margin: 3vh auto;
+        overflow: hidden;
+        z-index: 3;
+        
+        .cinetic {
+            &__cinetic-lines {
+                height: 80vh;
+                width: 100vw;
+                background-position: center;
+                background-position: cover;
+                margin: -20vh 0;
+
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                z-index:1;
+                // transform: rotateY(180deg);
+
+                &:hover {
+                animation: cinetic-move infinite;
+                animation-duration: 1s;
+                } 
+            }
+            @keyframes cinetic-move {
+                0% {transform: rotateY(0deg);}
+                49.9% {transform: rotateY(0deg);}
+                50% {transform: rotateY(180deg);}
+                100% {transform: rotateY(180deg);}
+            }
+            
+            &__astronaut {
+                max-height:30vh;
+                width:auto;
+                position: absolute;
+                margin-top: 6vh;
+                filter: grayscale(100%);
+                z-index: 2;
+            }
+        }
+        
     }
 }
