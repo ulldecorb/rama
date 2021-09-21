@@ -1,4 +1,4 @@
-# RAMA - Web Comic: gallery of stripes
+# RAMA - Web Comic: cartoon gallery
 
 ## Table of contents
 * [General info](#general-info)
