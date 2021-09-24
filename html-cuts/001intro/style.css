@@ -63,8 +63,8 @@ body {
 }
 
 .museum__background {
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
   margin: 0 auto;
   height: 100vw;
   width: 80vw;
@@ -72,41 +72,37 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .museum__strip-background {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   height: 100vh;
   width: 80vw;
   background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) brightness(60%);
+          filter: grayscale(100%) brightness(60%);
   margin: 0 auto;
 }
 
 .museum__torch {
   position: absolute;
-  border: 20px solid black;
-  color: #000;
   width: 10vw;
   height: 10vw;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.museum__torch .torch__image {
-  position: absolute;
-  top: -100px;
-  left: -50px;
-  background-image: url("https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
+  background-image: url("https://i.pinimg.com/originals/a0/26/1b/a0261b885cfba5a65c675c33327acf5a.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
 }
 
-.museum__strip01 {
+.museum .strip {
   height: 300px;
   width: 80vw;
   margin: 3vh auto;
@@ -115,44 +111,54 @@ body {
   overflow: hidden;
 }
 
-.museum__strip01:nth-child(3) {
+.museum__lantern {
   background-color: #000;
-  background-image: url("https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  opacity: 0.2;
+  opacity: 0;
+  cursor: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5vh 0;
 }
 
-.museum__strip01:nth-child(5) {
+.museum__blur {
   background-color: #000;
+  position: relative;
+  height: 300px;
+  width: 80vw;
   overflow: hidden;
 }
 
-.museum__strip01:nth-child(5):hover .astronaut {
+.museum__blur:hover .astronaut {
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
 
-.museum__strip01:nth-child(5):hover .sky {
+.museum__blur:hover .sky {
   -webkit-filter: blur(0px);
           filter: blur(0px);
 }
 
-.museum__strip01:nth-child(5):hover .text:last-of-type {
+.museum__blur:hover .text:last-of-type {
   opacity: 1;
 }
 
-.museum__strip01:nth-child(5):hover .text:first-of-type {
+.museum__blur:hover .text:first-of-type {
   opacity: 0;
 }
 
-.museum__strip01:nth-child(5) .astronaut {
+.museum__blur .astronaut {
   height: 200px;
   width: 200px;
   position: absolute;
-  top: 360vh;
-  left: 200px;
+  top: 0;
+  left: 50px;
   z-index: 1;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -162,35 +168,37 @@ body {
           animation-duration: 3s;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 @-webkit-keyframes mymove {
   0% {
-    top: 360vh;
+    top: 10vh;
   }
   50% {
-    top: 363vh;
+    top: 13vh;
   }
   100% {
-    top: 360vh;
+    top: 10vh;
   }
 }
 
 @keyframes mymove {
   0% {
-    top: 360vh;
+    top: 10vh;
   }
   50% {
-    top: 363vh;
+    top: 13vh;
   }
   100% {
-    top: 360vh;
+    top: 10vh;
   }
 }
 
-.museum__strip01:nth-child(5) .sky {
+.museum__blur .sky {
   height: auto;
   width: 80vw;
   -webkit-filter: blur(2px);
@@ -200,15 +208,15 @@ body {
   transition: 0.4s;
 }
 
-.museum__strip01:nth-child(5) .text {
+.museum__blur .text {
   height: 60px;
   width: 120px;
   border-radius: 50%;
   background: whitesmoke;
   border: 4px solid #000;
   position: absolute;
-  top: 377vh;
-  left: 1100px;
+  top: 14vh;
+  left: 820px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,10 +237,10 @@ body {
   transition: 0.4s;
 }
 
-.museum__strip01:nth-child(5) .text:first-of-type {
+.museum__blur .text:first-of-type {
   opacity: 1;
-  top: 356vh;
-  left: 500px;
+  top: 7vh;
+  left: 320px;
   height: 30px;
 }
 

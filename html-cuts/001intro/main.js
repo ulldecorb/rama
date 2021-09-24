@@ -3,9 +3,20 @@ const torchImage = document.getElementById('torch-image').style;
 const torchStrip = document.getElementById('torch-strip').style
 
 function followTorch() {
-  torch.top = parseInt(window.event.pageY - 5 ) + "px";
-  torch.left = parseInt(window.event.pageX - 35) + "px";
+  torch.top = parseInt(window.event.pageY) + "px";
+  torch.left = parseInt(window.event.pageX) + "px";
   torchImage.top = torchStrip.event.pageY;
   torchImage.left = torchStrip.event.pageX;
 
 }
+
+// let cursor = document.getElementById("torch");
+
+// document.addEventListener("mousemove", (value) => {
+//   let x = value.clientX;
+//   let y = value.clientY;
+
+//   cursor.style.left = x + "px";
+//   cursor.style.top = y + "px";
+
+// });
