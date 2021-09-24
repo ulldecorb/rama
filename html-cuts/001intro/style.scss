@@ -42,81 +42,73 @@ body {
         // background: transparent;
     }
 }
-// ::-webkit-scrollbar-thumb {
-    //     // display: none;
-    //     // width: 200px;
-    //     // height: 100vh;
-    // }
+
+.museum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:80%;
     
-    
-    .museum {
-        // position: absolute;
-        // top: 0;
-        // left: 50%;
-        // transform: translate(0, -50%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        width:80%;
-        
-        
-        // background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
-        // background-position: center;
-        // background-repeat: no-repeat;
-        // background-size: cover;
-        
-        &__background {
-            filter: brightness(80%);
-            // transform: rotate(90deg);
-            margin: 0 auto;
-            // position: absolute;
-            height: 100vw;
-            width:80vw;
-            background-image: url("https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2017/04/the_motion_of_two_million_stars/16900235-1-eng-GB/The_motion_of_two_million_stars_pillars.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            // background-image:  linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-            
-        }
-        
-        &__strip-background {
-            height: 100vh;
-            width: 80vw;
-            background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            filter: grayscale(100%);
-            margin: 0 auto;
-            // filter: brightness(30%);
-        }
-    
-    &__torch {
-        position: absolute;
-        border:20px solid black;
-        color: #000;
-        width: 10vw;
-        height: 10vw;
-        border-radius: 50%;
-        overflow: hidden;
-        
-        .torch {
-            &__image {
-                position: absolute;
-                top: -100px;
-                left: -50px;
-                background-image: url("https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 100%;
-            }
-        }
+    &__background {
+        filter: brightness(130%);
+        margin: 0 auto;
+        height: 100vw;
+        width:80vw;
+        background-image: url("https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2017/04/the_motion_of_two_million_stars/16900235-1-eng-GB/The_motion_of_two_million_stars_pillars.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(180deg);
+        // background-image:  linear-gradient(to bottom, #000, #000 7vh,transparent 25vh);
     }
     
-    &__strip01 {
+    &__strip-background {
+        transform: rotate(180deg);
+        height: 100vh;
+        width: 80vw;
+        background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: grayscale(100%) brightness(60%);
+        margin: 0 auto;
+        // filter: brightness(30%);
+    }
+
+    &__torch {
+        position: absolute;
+        width: 10vw;
+        height: 10vw;
+        background-image: url("https://i.pinimg.com/originals/a0/26/1b/a0261b885cfba5a65c675c33327acf5a.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        transform: rotate(25deg);
+                
+        // border:none;
+        // border-radius: 50%;
+        // color: #000;
+        // overflow: hidden;
+        // .torch {
+        //     &__image {
+        //         position: absolute;
+        //         top: -100px;
+        //         left: -50px;
+        //         // background-image: url("https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
+        //     }
+        // position: absolute;
+        // width: 162px;
+        // height: 162px;
+        // border: 2px solid #000;
+        // background: #FFF;
+        // border-radius: 50%;
+        // box-shadow: 0px 0px 60px 5px #000 inset ;
+
+
+    }
+    
+    .strip {
         height:300px;
         width:80vw;
         margin: 3vh auto;
@@ -125,16 +117,25 @@ body {
         overflow: hidden;
     }
     
-    &__strip01:nth-child(3) {
+    &__lantern {
         background-color: #000;
-        background-image: url("https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
-        opacity: 0.2;    
+        // background-image: url("https://cflvdg.avoz.es/sc/980x//default/2015/02/12/00121423764927311777512/Foto/wally.jpg");
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: 100%;
+        opacity: 0;    
+        cursor: none;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5vh 0;
     }
-    &__strip01:nth-child(5) {
+
+    &__blur {
         background-color: #000;
+        position: relative;
+        height:300px;
+        width:80vw;
         overflow: hidden;
         
         &:hover {
@@ -154,22 +155,22 @@ body {
             height: 200px;
             width: 200px;
             position: absolute;
-            top: 360vh;
-            left: 200px;
+            top: 0;
+            left: 50px;
             z-index: 1; 
             transform: rotateY(180deg);
             animation: mymove infinite;
             animation-duration: 3s;
             transition-timing-function: ease-in;
-            // animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
             transition: 0.4s;
             
         }
         
         @keyframes mymove {
-            0% {top: 360vh}
-            50% {top: 363vh}    
-            100% {top: 360vh}    
+            0% {top: 10vh}
+            50% {top: 13vh}    
+            100% {top: 10vh}    
         }
         
         .sky {
@@ -187,8 +188,8 @@ body {
             background: whitesmoke;
             border:4px solid #000;
             position: absolute;
-            top: 377vh;
-            left: 1100px;
+            top: 14vh;
+            left: 820px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -200,10 +201,9 @@ body {
             
             &:first-of-type {
                 opacity:1;
-                top: 356vh;
-                left: 500px;
+                top: 7vh;
+                left: 320px;
                 height: 30px;
-                
             }
         }
     }
