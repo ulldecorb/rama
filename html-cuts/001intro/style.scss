@@ -108,7 +108,7 @@ body {
         width:80vw;
         margin: 3vh auto;
         background-color: #4090FF;
-        border: 2px solid #000;
+        // border: 2px solid #000;
         overflow: hidden;
     }
     
@@ -125,11 +125,13 @@ body {
     }
 
     &__blur {
-        background-color: #000;
+        // background-color: #000;
         position: relative;
         height:300px;
         width:80vw;
-        overflow: hidden;
+        // overflow: hidden;
+        // border: none;
+        // border: 2px solid #000;
         
         &:hover {
             .astronaut {filter: blur(4px)}
@@ -237,5 +239,15 @@ body {
                 z-index: 2;
             }
         }
+    }
+
+    &__tooltip {
+        height: 100vh;
+        width: 50vw;
+        background-color: rgba(5, 5, 150, 0.5);
+        border-left: 2px solid red; 
+        position: fixed;
+        right: 0px;
+        top: 0px;
     }
 }
