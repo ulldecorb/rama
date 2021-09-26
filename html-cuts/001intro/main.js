@@ -4,7 +4,7 @@ const torchStrip = document.getElementById('torch-strip').style
 
 function followTorch() {
   torch.top = parseInt(window.event.pageY) + "px";
-  torch.left = parseInt(window.event.pageX) + "px";
+  torch.left = parseInt(window.event.pageX ) + "px";
   torchImage.top = torchStrip.event.pageY;
   torchImage.left = torchStrip.event.pageX;
 
