@@ -12,11 +12,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #000;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: black;
   overflow-x: hidden;
 }
 
@@ -339,5 +337,18 @@ body {
   position: fixed;
   right: 0px;
   top: 0px;
+}
+
+.info-bar, .info-bar__button {
+  width: 100vw;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+  cursor: pointer;
+}
+
+.info-bar {
+  padding: 50px;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
