@@ -20,3 +20,9 @@ function followTorch() {
 //   cursor.style.top = y + "px";
 
 // });
+
+// $(document).ready(function(){
+//   $(".info-bar__button").click(function(){
+//     $(".info-bar").slideToggle("slow");
+//   });
+// });

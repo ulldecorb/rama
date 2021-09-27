@@ -7,10 +7,10 @@
 
 body {
     @include flex(column, center, center);
-    color:#000;
+    // color:#000;
     position:absolute;
     top:0;left:0;
-    background-color: black;
+    // background-color: black;
     overflow-x: hidden;
 }
 
@@ -250,4 +250,22 @@ body {
         right: 0px;
         top: 0px;
     }
+}
+
+.info-bar, .info-bar__button{
+    // height:;
+    // position: absolute;
+    // top:0;
+    // left:0;
+    width: 100vw;
+    // padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    cursor: pointer;
+
+}
+.info-bar{
+    padding: 50px;
+    display: none;
 }

@@ -100,8 +100,8 @@
 .landing__start-button:hover {
   -webkit-box-shadow: 0 0 50px red;
           box-shadow: 0 0 50px red;
-  text-shadow: 0 5px 10px red,0 -5px 10px red;
-  color: #fffff6;
+  text-shadow: 0 5px 20px #582e28;
+  color: white;
 }
 
 .landing__ship {

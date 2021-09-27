@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Rama Web Comic</title>
 </head>
 <body>
-    <section class="museum">
+    <!-- <section class="museum">
         
         <div class="museum__strip-background"></div>
         <div class="museum__background"></div>
@@ -27,8 +28,6 @@
             <img src="https://i.pinimg.com/originals/a0/26/1b/a0261b885cfba5a65c675c33327acf5a.png" 
             alt="astronaut"
             class="astronaut">
-            <!-- <img src="https://s3.us-east-1.amazonaws.com/maxonsites/images/maxon/_800x418_crop_center-center_82_none/Universe_Hero.jpg?mtime=1612732124"  -->
-            <!-- <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/newscms/2018_37/2566431/180914-stock-universe-al-1025.jpg"  -->
             <img src="https://images.news18.com/ibnlive/uploads/2020/09/1600852795_untitled-design-5.png" 
             alt="sky"
             class="sky">
@@ -48,10 +47,23 @@
         <div class="museum__tooltip">
             
         </div>
+    </section> -->
+    <section class="info-bar__button" id="info-bar__button">push here
     </section>
-    <section class="info-bar" id="info-bar">
+    <div class="info-bar">Hello world</div>
+    <script type="text/javascript" src="./main.js"></script>
+    <script>
+        $(document).ready(function(){
+  $(".info-bar__button").click(function(){
+    $(".info-bar").slideToggle("slow");
+  });
+});
+    </script>
 
-    </section>
-    <script src="./main.js"></script>
 </body>
 </html>
+
+
+
+            <!-- <img src="https://s3.us-east-1.amazonaws.com/maxonsites/images/maxon/_800x418_crop_center-center_82_none/Universe_Hero.jpg?mtime=1612732124"  -->
+            <!-- <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/newscms/2018_37/2566431/180914-stock-universe-al-1025.jpg"  -->
