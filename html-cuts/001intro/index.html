@@ -9,7 +9,7 @@
     <title>Rama Web Comic</title>
 </head>
 <body>
-    <!-- <section class="museum">
+    <section class="museum">
         
         <div class="museum__strip-background"></div>
         <div class="museum__background"></div>
@@ -44,18 +44,24 @@
             class="cinetic__cinetic-lines">
         </div>
 
-        <div class="museum__tooltip">
+        <div class="museum__tooltip"></div>
             
         </div>
-    </section> -->
-    <section class="info-bar__button" id="info-bar__button">push here
+    </section>
+    <section class="info-bar__button" id="info-bar__button">
+        <div class="burger-line" id="1"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
     </section>
     <div class="info-bar">Hello world</div>
     <script type="text/javascript" src="./main.js"></script>
     <script>
         $(document).ready(function(){
   $(".info-bar__button").click(function(){
-    $(".info-bar").animate({right: '0vw'});
+    $(".info-bar").animate({right: "toggle"} );
+    $("#1").animate({transform:'rotateX(45deg)'}, "slow");
+    $("#2").animate({opacity:'0'}, "slow");
+    $(".burger-line:nth-child(3)").animate({transform:'rotateX(-45deg)'}, "slow");
   });
 });
     </script>

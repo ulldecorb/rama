@@ -10,7 +10,7 @@ body {
     // color:#000;
     position:absolute;
     top:0;left:0;
-    // background-color: black;
+    background-color: black;
     overflow-x: hidden;
 }
 
@@ -242,34 +242,51 @@ body {
     }
 
     &__tooltip {
-        height: 100vh;
-        width: 50vw;
-        background-color: rgba(5, 5, 150, 0.5);
-        border-left: 2px solid red; 
-        position: fixed;
-        right: 0px;
-        top: 0px;
+        height: 600px;
+        width: 80vw;
+        margin: 3vh auto;
+        background-color: rgb(5, 5, 150);
+        overflow: hidden;
     }
 }
 
 .info-bar {
     height: 100vh;
-    width: 50vw;
+    width: 30vw;
     background-color: rgba(5, 5, 150, 0.5);
     border-left: 2px solid red; 
     position: fixed;
-    right: -50vw;
+    right: -30vw;
     top: 0px;
+    z-index: 10;
     
     &__button {
         position: fixed;
         right: 0px;
         top: 0px;
-        z-index: 2;
-        height: 10vmin;
-        width: 10vmin;
-        background-color: black;
+        z-index: 11;
+        height: 40px;
+        width: 40px;
+        // background-color: black;
         cursor: pointer;
+        // @include flex (column, flex-start, center);
+    
+        .burger-line {
+           background-color:red;
+           height: 5px;
+           width: 35px;
+           border-radius: 5px;
+           margin: 3px 0;
+           position:absolute;
+           right: 5px;
+
+           &:nth-child(2) {
+               top: 10px
+            }
+           &:nth-child(3) {
+               top: 20px
+            }
+        }
     }
 }
 
