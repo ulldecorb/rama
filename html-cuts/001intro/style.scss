@@ -5,6 +5,16 @@
     align-items: $align;
 }
 
+@mixin speech-bubble($height, $width, $top, $left) {
+    height: $height;
+    width: $width;
+    position: absolute;
+    top: $top;
+    left: $left;
+    color: #000;
+    text-align: center;
+}
+
 body {
     @include flex(column, center, center);
     // color:#000;
