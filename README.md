@@ -1,4 +1,4 @@
-# RAMA - Web Comic: cartoon gallery
+# Web Comic: panel gallery
 
 ## Table of contents
 * [General info](#general-info)
@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 ## General info
-Lab to improve IU experience skills.
+Lab to improve IU experience on web comic. 
 
 ## Technologies
 Project is created with:
