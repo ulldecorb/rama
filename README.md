@@ -6,7 +6,9 @@
 * [Setup](#setup)
 
 ## General info
-Lab to improve IU experience on web comic. 
+As pasionate of comic I felt that the posibilites of web comics aren't develop yet. A quick search on the web shows that almost all web-comics are simple stripes that can be showed also in clasical paper suport. 
+I felt that the posibilites of web-comics aren't develop yet. The triad HTML-CSS-JAVASCRIPT (or any another logic code languaje) can offer a amazing mix between the classic cartoon and the posibilites of the web as a canvas. Transitions, filters, animations are only a few of the potent tools that CSS allow to improve a strip and make a better UX.
+A gallery of panels as lab to research IU experience on web comic. 
 
 ## Technologies
 Project is created with:
