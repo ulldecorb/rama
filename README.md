@@ -1,4 +1,4 @@
-# RAMA - Web Comic: cartoon gallery
+# RAMA - Web Comic: strip gallery
 
 ## Table of contents
 * [General info](#general-info)
@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 ## General info
-Lab to improve IU experience skills.
+Lab to improve IU experience skills. 
 
 ## Technologies
 Project is created with:
@@ -15,7 +15,7 @@ Project is created with:
 * SASS: 1.41.1
 * HTML semanthic
 * BEM
-* SOLID
+
 	
 ## Setup
 To run this project, run index.html locally on ./rama:
