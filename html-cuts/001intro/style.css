@@ -334,8 +334,11 @@ body {
   height: 600px;
   width: 80vw;
   margin: 3vh auto;
-  background-color: #050596;
-  overflow: hidden;
+  background-image: url("https://static.timesofisrael.com/www/uploads/2018/09/Apollo_11-640x400.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: red;
 }
 
 .info-bar {
