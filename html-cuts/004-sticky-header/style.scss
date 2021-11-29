@@ -1,5 +1,5 @@
 body {
-    background-color: palegoldenrod;
+    background-color: grey;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,8 +7,9 @@ body {
 .header {
     padding: 10px 16px;
     height: 20vh;
-    background-color: orchid;
-    border:2px solid darkred;
+    background-color: darkred;
+    color: yellow;
+    // text-align: center;  // Wrong UX: Change align on window top
 }
 
 .sticky {
@@ -24,9 +25,31 @@ body {
 .content {
     padding: 16px;
     height: 200vh;
+    background-color: #000;
+    color: yellow;
 }
 
 .margin-top {
     height: 20vh;
     background-color: palegoldenrod;
+}
+
+.back-anchor {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 10vh;
+    width: 10vh;
+    color: yellow;
+    background-color: black;
+    border: 4px solid darkred;
+    border-radius: 50%;
+    margin: 2vh;
+    z-index: 2;
+    text-align: center;
+    text-decoration-color: red;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -40,3 +40,23 @@ div:nth-child(4), div a:nth-child(4) {
 div:nth-child(5), div a:nth-child(5) {
     background-color: $color5;
 }
+
+.back-anchor {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 10vh;
+    width: 10vh;
+    color: yellow;
+    background-color: black;
+    border: 4px solid darkred;
+    border-radius: 50%;
+    margin: 2vh;
+    z-index: 2;
+    text-align: center;
+    text-decoration-color: red;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
