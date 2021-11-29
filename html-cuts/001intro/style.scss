@@ -257,10 +257,34 @@ body {
         width: 80vw;
         margin: 3vh auto;
         // overflow: hidden;
-        background-image: url("https://static.timesofisrael.com/www/uploads/2018/09/Apollo_11-640x400.jpg") center no-repeat cover;
+        background-image: url("https://static.timesofisrael.com/www/uploads/2018/09/Apollo_11-640x400.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-color:red;
+    }
+
+    &__true-lantern {
+        height: 600px;
+        width: 80vw;
+        margin: 3vh auto;
+        position: relative;
+        background: #1d1f20;
+        padding: 20rem;
+        text-align: center;
+        // https://3.bp.blogspot.com/-cRsGipHaibA/WeN9INVqkQI/AAAAAAAC2Y4/qjBpDSYCTZA7tCpG8nDlV1Mx7Qcul_1igCLcBGAs/s1600/german-u-boat-1.jpg
+
+        .lantern{
+            z-index: 5;
+            position: absolute;
+            top: calc(50% - 10rem);
+            left: calc(50% - 10rem);
+            width: 20rem;
+            height: 20rem;
+            background: url('https://3.bp.blogspot.com/-cRsGipHaibA/WeN9INVqkQI/AAAAAAAC2Y4/qjBpDSYCTZA7tCpG8nDlV1Mx7Qcul_1igCLcBGAs/s1600/german-u-boat-1.jpg') 50% 50% no-repeat fixed;
+            background-size: cover;
+            border-radius: 50%;
+        }
     }
 }
 

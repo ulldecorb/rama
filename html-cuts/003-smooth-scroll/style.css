@@ -1,0 +1,71 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+div {
+  height: 70vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+a {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #000;
+}
+
+div:nth-child(1) {
+  background-color: red;
+}
+
+div:nth-child(2) {
+  background-color: orangered;
+}
+
+div:nth-child(3) {
+  background-color: orange;
+}
+
+div:nth-child(4) {
+  background-color: yellow;
+}
+
+div:nth-child(5) {
+  background-color: yellowgreen;
+}
+
+div a:nth-child(1) {
+  background-color: red;
+}
+
+div a:nth-child(2) {
+  background-color: orangered;
+}
+
+div a:nth-child(3) {
+  background-color: orange;
+}
+
+div a:nth-child(4) {
+  background-color: yellow;
+}
+
+div a:nth-child(5) {
+  background-color: yellowgreen;
+}
+/*# sourceMappingURL=style.css.map */
