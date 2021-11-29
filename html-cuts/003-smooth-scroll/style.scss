@@ -25,34 +25,18 @@ a {
     border: 2px solid #000;
 }
 
-div:nth-child(1) {
+div:nth-child(1), div a:nth-child(1) {
     background-color: $color1;
 }
-div:nth-child(2) {
+div:nth-child(2), div a:nth-child(2) {
     background-color: $color2;
 }
-div:nth-child(3) {
+div:nth-child(3), div a:nth-child(3) {
     background-color: $color3;
 }
-div:nth-child(4) {
+div:nth-child(4), div a:nth-child(4) {
     background-color: $color4;
 }
-div:nth-child(5) {
-    background-color: $color5;
-}
-
-div a:nth-child(1) {
-    background-color: $color1;
-}
-div a:nth-child(2) {
-    background-color: $color2;
-}
-div a:nth-child(3) {
-    background-color: $color3;
-}
-div a:nth-child(4) {
-    background-color: $color4;
-}
-div a:nth-child(5) {
+div:nth-child(5), div a:nth-child(5) {
     background-color: $color5;
 }
