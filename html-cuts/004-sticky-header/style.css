@@ -1,0 +1,33 @@
+body {
+  background-color: palegoldenrod;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding: 10px 16px;
+  height: 20vh;
+  background-color: orchid;
+  border: 2px solid darkred;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.content {
+  padding: 16px;
+  height: 200vh;
+}
+
+.margin-top {
+  height: 20vh;
+  background-color: palegoldenrod;
+}
+/*# sourceMappingURL=style.css.map */
