@@ -75,10 +75,13 @@
 }
 
 .landing__start-button {
+  text-decoration: none;
   z-index: 1;
   width: 3vw;
   height: 3vw;
   border-radius: 50%;
+  margin: 2vh;
+  padding: 2vh;
   border: none;
   background-color: antiquewhite;
   color: #8f4940;
@@ -100,8 +103,26 @@
 .landing__start-button:hover {
   -webkit-box-shadow: 0 0 50px red;
           box-shadow: 0 0 50px red;
-  text-shadow: 0 5px 20px #582e28;
-  color: white;
+  text-shadow: 0 0 20px 20px #9f83ee;
+  color: #500b0b;
+}
+
+.landing__demos {
+  height: 50vh;
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .landing__ship {
