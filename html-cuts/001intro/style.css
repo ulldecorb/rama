@@ -382,6 +382,7 @@ body {
   height: 40px;
   width: 40px;
   cursor: pointer;
+  font-size: 2em;
 }
 
 .info-bar__button .burger-line {
@@ -400,5 +401,53 @@ body {
 
 .info-bar__button .burger-line:nth-child(3) {
   top: 20px;
+}
+
+span {
+  color: red;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.5);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 36px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

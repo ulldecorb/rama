@@ -26,3 +26,13 @@ function followTorch() {
 //     $(".info-bar").slideToggle("slow");
 //   });
 // });
+
+
+
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "0";
+}
