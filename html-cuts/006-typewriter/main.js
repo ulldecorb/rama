@@ -24,15 +24,18 @@ Distante y dolorosa como si hubieras muerto.
 Una palabra entonces, una sonrisa bastan.
 Y estoy alegre, alegre de que no sea cierto.`; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
+var typewrite;
 
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("demo").innerHTML += txt.charAt(i);
     i++;
-    setTimeout(typeWriter, speed);
+    typewrite = setTimeout(typeWriter, speed);
   }
 }
 
 function reset() {
+  clearTimeout(typewrite);
     document.getElementById("demo").innerHTML = '';
+    i = 0;
 }
