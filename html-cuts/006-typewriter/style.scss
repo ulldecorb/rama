@@ -1,0 +1,19 @@
+.back-anchor {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 10vh;
+    width: 10vh;
+    color: yellow;
+    background-color: black;
+    border: 4px solid darkred;
+    border-radius: 50%;
+    margin: 2vh;
+    z-index: 2;
+    text-align: center;
+    text-decoration-color: red;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
