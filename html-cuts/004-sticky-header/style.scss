@@ -34,6 +34,38 @@ body {
     background-color: palegoldenrod;
 }
 
+.margin-bottom {
+    height: 100vh;
+    color: yellow;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.fadeOut {
+animation-name: faderOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.fadeIn {
+animation-name: faderIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes faderOut {
+from {opacity: 1}
+to {opacity: 0;}
+}
+
+@keyframes faderIn {
+from {opacity: 0}
+to {opacity: 1;}
+}
+
 .back-anchor {
     position: fixed;
     top: 0;
