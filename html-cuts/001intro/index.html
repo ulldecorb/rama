@@ -53,22 +53,31 @@
         </div>
     </section>
     <section class="info-bar__button" id="info-bar__button">
-        
-        <div class="burger-line" id="1"></div>
-        <div class="burger-line"></div>
-        <div class="burger-line"></div>
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        </div>
+        <span onclick="openNav()">
+            &#9776;
+            <div class="burger-line" id="1"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </span>
     </section>
+
+
+
     <!-- <div class="info-bar">Hello world</div> -->
     <script type="text/javascript" src="./main.js"></script>
     <!-- <script>
         $(document).ready(function(){
-  $(".info-bar__button").click(function(){
-    $(".info-bar").animate({right: "toggle"} );
-    $("#1").animate({transform:'rotateX(45deg)'}, "slow");
-    $("#2").animate({opacity:'0'}, "slow");
-    $(".burger-line:nth-child(3)").animate({transform:'rotateX(-45deg)'}, "slow");
-  });
-});
+            $(".info-bar__button").click(function(){
+                $(".info-bar").animate({right: "toggle"} );
+                $("#1").animate({transform:'rotateX(45deg)'}, "slow");
+                $("#2").animate({opacity:'0'}, "slow");
+                $(".burger-line:nth-child(3)").animate({transform:'rotateX(-45deg)'}, "slow");
+        });
+    });
     </script> -->
 
 </body>
