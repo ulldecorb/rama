@@ -1,0 +1,157 @@
+.back-anchor {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 10vh;
+  width: 10vh;
+  color: yellow;
+  background-color: black;
+  border: 4px solid darkred;
+  border-radius: 50%;
+  margin: 2vh;
+  z-index: 2;
+  text-align: center;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.strip {
+  height: 300px;
+  width: 80vw;
+  margin: 3vh auto;
+  background-color: #4090FF;
+  overflow: hidden;
+}
+
+.museum__blur {
+  position: relative;
+  height: 300px;
+  width: 80vw;
+}
+
+.museum__blur:hover .astronaut {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+.museum__blur:hover .sky {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+.museum__blur:hover .text:last-of-type {
+  opacity: 1;
+}
+
+.museum__blur:hover .text:first-of-type {
+  opacity: 0;
+}
+
+.museum__blur .astronaut {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: 1;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-animation: mymove infinite;
+          animation: mymove infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@-webkit-keyframes mymove {
+  0% {
+    top: 10vh;
+  }
+  50% {
+    top: 13vh;
+  }
+  100% {
+    top: 10vh;
+  }
+}
+
+@keyframes mymove {
+  0% {
+    top: 10vh;
+  }
+  50% {
+    top: 13vh;
+  }
+  100% {
+    top: 10vh;
+  }
+}
+
+.museum__blur .sky {
+  height: auto;
+  width: 80vw;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  background-size: cover;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.museum__blur .text {
+  height: 60px;
+  width: 120px;
+  border-radius: 50%;
+  background: whitesmoke;
+  border: 4px solid #000;
+  position: absolute;
+  top: 14vh;
+  left: 820px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  padding: 5px;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.museum__blur .text:first-of-type {
+  opacity: 1;
+  top: 7vh;
+  left: 320px;
+  height: 30px;
+}
+/*# sourceMappingURL=style.css.map */
