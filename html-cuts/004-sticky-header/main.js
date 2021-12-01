@@ -1,46 +1,19 @@
-// When the user scrolls the page, execute myFunction
 window.onscroll = function() {stickHeaderOn()};
-// window.onscroll = function() {stickHeaderOff()};
 
-// Get the header
-var header = document.getElementById("myHeader");
-var fakeHeader = document.getElementById("margin-bottom");
+let header = document.getElementById("myHeader");
+let fakeHeader = document.getElementById("margin-bottom");
 
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
+let startSticky = header.offsetTop;
+let opacitySwitch = fakeHeader.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickHeaderOn() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-
-    if (window.pageYOffset > 800 ) {
-    //   if (header.classList.contains("fadeOut")) {
-    //     header.classList.remove("fadeOut");
-    //     header.classList.add("fadeIn");
-    //   }
-    //   // if (header.classList.contains("fadeIn")) {
-    //   //   header.classList.replace("fadeIn", "fadeOut");
-    //   // }
-    //   // (
-    //   !header.classList.contains("fadeOut") && header.classList.add("fadeOut");
-
-    //   // && !header.classList.contains("fadeIn")) 
-    //   // && 
-    header.classList.add("fadeOut");
-    //   // )
-    //   console.log("YES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-    }
-  } else {
-    header.classList.remove("sticky");
+  window.pageYOffset > startSticky ? header.classList.add("sticky") : header.classList.remove("sticky");
+    
+  if (window.pageYOffset > opacitySwitch && window.pageYOffset < opacitySwitch + 200) {
+    header.classList.contains("fadeOut") && header.classList.replace("fadeOut", "fadeIn");
   }
-  console.log(window.pageYOffset)
+  if (window.pageYOffset > opacitySwitch + 200) {
+    header.classList.contains("fadeIn") && header.classList.replace("fadeIn", "fadeOut");
+    !header.classList.contains("fadeOut") && header.classList.add("fadeOut");
+  }
 }
-// function stickHeaderOff() {
-//   if (window.pageYOffset < 600) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-//   console.log(window.pageYOffset)
-// }
