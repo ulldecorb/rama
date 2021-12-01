@@ -16,6 +16,11 @@
     text-align: center;
 }
 
+body {
+    margin: 0;
+    background-color: #000;
+}
+
 .back-anchor {
     position: fixed;
     top: 0;
@@ -42,18 +47,13 @@
     width:80vw;
     margin: 3vh auto;
     background-color: #4090FF;
-    // border: 2px solid #000;
     overflow: hidden; 
 }
 
-.museum__blur {
-    // background-color: #000;
+.blur {
     position: relative;
     height:300px;
     width:80vw;
-    // overflow: hidden;
-    // border: none;
-    // border: 2px solid #000;
     
     &:hover {
         .astronaut {filter: blur(4px)}
@@ -76,11 +76,11 @@
         left: 50px;
         z-index: 1; 
         transform: rotateY(180deg);
+        transition-timing-function: ease-in;
+        transition: 0.4s;
         animation: mymove infinite;
         animation-duration: 3s;
-        transition-timing-function: ease-in;
         animation-fill-mode: forwards;
-        transition: 0.4s;
         
     }
     
@@ -95,7 +95,7 @@
         width: 80vw;
         filter: blur(2px);
         background-size: cover;
-        transition: 0.4s;
+        transition: 0.2s;
     }
     
     .text {

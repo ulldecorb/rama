@@ -74,13 +74,13 @@
     }
 
     &__demos{
-        // border:2px solid red;
         height: 50vh;
         width: 30vw;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: center;
+        text-align: center;
     }
 
     &__ship {
