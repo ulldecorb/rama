@@ -1,20 +1,9 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
   background-color: black;
   overflow-x: hidden;
 }
@@ -58,10 +47,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
 }
 
-.museum__background {
+.museum__background-estelar {
   -webkit-filter: brightness(130%);
           filter: brightness(130%);
   margin: 0 auto;
@@ -75,12 +63,13 @@ body {
           transform: rotate(180deg);
 }
 
-.museum__strip-background {
+.museum__background-earth {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   height: 100vh;
   width: 80vw;
   background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

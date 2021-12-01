@@ -16,11 +16,15 @@
     text-align: center;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
-    @include flex(column, center, center);
+    // @include flex(column, center, center);
     // color:#000;
-    position:absolute;
-    top:0;left:0;
+    // margin: 0;
     background-color: black;
     overflow-x: hidden;
 }
@@ -55,9 +59,9 @@ body {
 
 .museum {
     @include flex(column, center, center);
-    width:80%;
+    // width:80%;
     
-    &__background {
+    &__background-estelar {
         filter: brightness(130%);
         margin: 0 auto;
         height: 100vw;
@@ -70,11 +74,12 @@ body {
         // background-image:  linear-gradient(to bottom, #000, #000 7vh,transparent 25vh);
     }
     
-    &__strip-background {
+    &__background-earth {
         transform: rotate(180deg);
         height: 100vh;
         width: 80vw;
         background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
+        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
