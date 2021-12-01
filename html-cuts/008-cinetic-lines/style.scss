@@ -1,0 +1,101 @@
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin speech-bubble($height, $width, $top, $left) {
+    height: $height;
+    width: $width;
+    position: absolute;
+    top: $top;
+    left: $left;
+    color: #000;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+.back-anchor {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 10vh;
+    width: 10vh;
+    color: yellow;
+    background-color: black;
+    border: 4px solid darkred;
+    border-radius: 50%;
+    margin: 2vh;
+    z-index: 2;
+    text-align: center;
+    text-decoration-color: red;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include flex(row, center, center);
+}
+
+.strip {
+    height:300px;
+    width:80vw;
+    margin: 3vh auto;
+    background-color: #4090FF;
+    overflow: hidden; 
+}
+
+.cinetic {
+    background-color: red;
+    @include flex(row, center, center);
+    height:300px;
+    width:80vw;
+    margin: 3vh auto;
+    overflow: hidden;
+    z-index: 3;
+    
+    .cinetic {
+        &__cinetic-lines {
+            height: 80vh;
+            width: 100vw;
+            background-position: center;
+            background-position: cover;
+            margin: -20vh 0;
+            z-index:1;
+            
+                &:hover {
+                    animation: cinetic-move infinite;
+                    animation-duration: 1s;
+                } 
+
+        }
+        @keyframes cinetic-move {
+            0% {transform: rotateY(0deg);}
+            49.9% {transform: rotateY(0deg);}
+            50% {transform: rotateY(180deg);}
+            100% {transform: rotateY(180deg);}
+        }
+        
+        &__astronaut {
+            max-height:30vh;
+            width:auto;
+            position: absolute;
+            margin-top: 0;
+            filter: grayscale(100%);
+            z-index: 2;
+            animation: mymove infinite;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+    
+    @keyframes mymove {
+        0% {top: 10vh}
+        50% {top: 13vh}    
+        100% {top: 10vh}    
+        }
+    }
+}
