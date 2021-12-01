@@ -1,10 +1,10 @@
 window.onscroll = function() {stickHeaderOn()};
 
 let header = document.getElementById("myHeader");
-let fakeHeader = document.getElementById("margin-bottom");
+let opacitySwitchNode = document.getElementById("margin-bottom");
 
 let startSticky = header.offsetTop;
-let opacitySwitch = fakeHeader.offsetTop;
+let opacitySwitch = opacitySwitchNode.offsetTop;
 
 function stickHeaderOn() {
   window.pageYOffset > startSticky ? header.classList.add("sticky") : header.classList.remove("sticky");
