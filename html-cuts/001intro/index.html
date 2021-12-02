@@ -11,9 +11,21 @@
 <body>
     <section class="museum">
         
-        <div class="museum__background-earth"></div>
+        <div id="earth" class="museum__background-earth"></div>
         
-        <div class="museum__blur strip">
+        <div id="museum__cinetic" class="museum__cinetic strip">
+            <img src="https://i.pinimg.com/originals/a0/26/1b/a0261b885cfba5a65c675c33327acf5a.png" 
+            alt="astronaut"
+            class="cinetic__astronaut">
+            <img src="https://motionarray.imgix.net/preview-296215-2MHk23farE-high_0000.jpg" 
+            alt="astronaut"
+            id="cinetic__cinetic-lines"
+            class="cinetic__cinetic-lines">
+        </div>
+
+        <div id="galaxy" class="museum__background-estelar"></div>
+
+        <div id="museum__blur" class="museum__blur strip">
             <img src="https://i.pinimg.com/originals/a0/26/1b/a0261b885cfba5a65c675c33327acf5a.png" 
             alt="astronaut"
             class="astronaut">
@@ -23,26 +35,14 @@
             <div class="text">Dios...</div>
             <div class="text">Es tan <strong>hermoso</strong>...</div>
         </div>
-        
-        <div class="museum__background-estelar"></div>
-        
-        <div class="museum__cinetic strip">
-            <img src="https://i.pinimg.com/originals/a0/26/1b/a0261b885cfba5a65c675c33327acf5a.png" 
-            alt="astronaut"
-            class="cinetic__astronaut">
-            <img src="https://motionarray.imgix.net/preview-296215-2MHk23farE-high_0000.jpg" 
-            alt="astronaut"
-            class="cinetic__cinetic-lines">
-        </div>
-
     </section>
     <section class="info-bar__button" id="info-bar__button">
         <div id="sidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="#earth">Earth</a>
+            <a href="#museum__blur">Blur</a>
+            <a href="#galaxy">Galaxy</a>
+            <a href="#museum__cinetic">Cinetic Lines</a>
         </div>
         <span onclick="openNav()">
             &#9776;
@@ -51,20 +51,8 @@
 
 
 
-    <!-- <div class="info-bar">Hello world</div> -->
-    <script type="text/javascript" src="./main.js"></script>
-    <!-- <script>
-        $(document).ready(function(){
-            $(".info-bar__button").click(function(){
-                $(".info-bar").animate({right: "toggle"} );
-                $("#1").animate({transform:'rotateX(45deg)'}, "slow");
-                $("#2").animate({opacity:'0'}, "slow");
-                $(".burger-line:nth-child(3)").animate({transform:'rotateX(-45deg)'}, "slow");
-        });
-    });
-    </script> -->
-
 </body>
+<script type="text/javascript" src="./main.js"></script>
 </html>
 
 
