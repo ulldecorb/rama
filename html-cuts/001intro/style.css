@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-.museum {
+.intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,68 +26,74 @@ body {
   width: 100%;
 }
 
-.museum__background-earth {
-  height: 100vh;
+.intro__background-earth {
+  height: 130vh;
   width: 100vw;
   background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-filter: grayscale(100%) brightness(60%);
-          filter: grayscale(100%) brightness(60%);
 }
 
-.museum__background-estelar {
+.intro__localitation-1 {
+  height: 15vw;
+  width: 100vw;
+  background: #000;
+  color: #FFF;
+  text-align: center;
+}
+
+.intro__localitation-1 h3 {
+  font-size: 3em;
+}
+
+.intro__background-estelar {
   height: 100vw;
   width: 100vw;
-  background-image: url("https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2017/04/the_motion_of_two_million_stars/16900235-1-eng-GB/The_motion_of_two_million_stars_pillars.jpg");
+  background-image: url("https://images.theconversation.com/files/314692/original/file-20200211-146714-1yjz3ie.jpg?ixlib=rb-1.1.0&rect=0%2C522%2C3562%2C1778&q=45&auto=format&w=1356&h=668&fit=crop");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.museum .strip {
+.intro .strip {
   height: 300px;
   width: 100vw;
-  background-color: #4090FF;
   overflow: hidden;
 }
 
-.museum__blur {
+.intro__blur {
   position: relative;
   height: 300px;
-  width: 80vw;
+  width: 100vw;
 }
 
-.museum__blur:hover .astronaut {
+.intro__blur:hover .astronaut {
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
 
-.museum__blur:hover .sky {
+.intro__blur:hover .sky {
   -webkit-filter: blur(0px);
           filter: blur(0px);
 }
 
-.museum__blur:hover .text:last-of-type {
+.intro__blur:hover .text:last-of-type {
   opacity: 1;
 }
 
-.museum__blur:hover .text:first-of-type {
+.intro__blur:hover .text:first-of-type {
   opacity: 0;
 }
 
-.museum__blur .astronaut {
+.intro__blur .astronaut {
   height: 200px;
   width: 200px;
   position: absolute;
   top: 0;
-  left: 50px;
+  left: 70vw;
   z-index: 1;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
   -webkit-animation: mymove infinite;
           animation: mymove infinite;
   -webkit-animation-duration: 3s;
@@ -124,9 +130,9 @@ body {
   }
 }
 
-.museum__blur .sky {
+.intro__blur .sky {
   height: auto;
-  width: 80vw;
+  width: 100vw;
   -webkit-filter: blur(2px);
           filter: blur(2px);
   background-size: cover;
@@ -134,7 +140,7 @@ body {
   transition: 0.4s;
 }
 
-.museum__blur .text {
+.intro__blur .text {
   height: 60px;
   width: 120px;
   border-radius: 50%;
@@ -142,7 +148,7 @@ body {
   border: 4px solid #000;
   position: absolute;
   top: 14vh;
-  left: 820px;
+  left: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,14 +169,14 @@ body {
   transition: 0.4s;
 }
 
-.museum__blur .text:first-of-type {
+.intro__blur .text:first-of-type {
   opacity: 1;
   top: 7vh;
-  left: 320px;
+  left: 55vw;
   height: 30px;
 }
 
-.museum__cinetic {
+.intro__cinetic {
   background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,7 +198,7 @@ body {
   z-index: 3;
 }
 
-.museum__cinetic .cinetic__cinetic-lines {
+.intro__cinetic .cinetic__cinetic-lines {
   height: 80vh;
   width: 100vw;
   background-position: center;
@@ -243,7 +249,7 @@ body {
   }
 }
 
-.museum__cinetic .cinetic__astronaut {
+.intro__cinetic .cinetic__astronaut {
   max-height: 20vh;
   width: auto;
   position: absolute;
