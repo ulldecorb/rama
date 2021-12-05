@@ -20,9 +20,7 @@ Project is created with:
 * HTML: 5
 * CSS: 3
 * SASS: 1.41.1
-* HTML semanthic
-* BEM
-
+* JAVASCRIPT ES6
 	
 ## Setup
 To run this project, run index.html locally on ./rama:
