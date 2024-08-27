@@ -52,50 +52,64 @@ body {
 .cinetic {
     background-color: red;
     @include flex(row, center, center);
-    height:300px;
-    width:80vw;
+    height:60vmin;
+    width:60vw;
+    width: 60vmin;
     margin: 3vh auto;
     overflow: hidden;
     z-index: 3;
+    border-radius: 50%;
     
-    .cinetic {
-        &__cinetic-lines {
-            height: 80vh;
-            width: 100vw;
-            background-position: center;
-            background-position: cover;
-            margin: -20vh 0;
-            z-index:1;
-            
-                &:hover {
-                    animation: cinetic-move infinite;
-                    animation-duration: 1s;
-                } 
-
-        }
-        @keyframes cinetic-move {
-            0% {transform: rotateY(0deg);}
-            49.9% {transform: rotateY(0deg);}
-            50% {transform: rotateY(180deg);}
-            100% {transform: rotateY(180deg);}
-        }
+    &__cinetic-lines {
+        height: 80vh;
+        width: 100vw;
+        background-position: center;
+        background-position: cover;
+        margin: -20vh 0;
+        z-index:1;
+        animation: cinetic-move ease-in-out infinite;
+        animation-duration: 5s;
         
-        &__astronaut {
-            max-height:30vh;
-            width:auto;
-            position: absolute;
-            margin-top: 0;
-            filter: grayscale(100%);
-            z-index: 2;
-            animation: mymove infinite;
+            // &:hover {
+            //     animation: cinetic-move linear infinite;
+            //     animation-duration: 5s;
+            // } 
+
+    }
+    
+    &__astronaut {
+        // padding-top: 15vmin;
+        max-height: 30vmin;
+        width: auto;
+        position: absolute;
+        // margin-top: 0;
+        filter: grayscale(100%);
+        z-index: 2;
+        transform: rotate(30deg);
+        // transition: transform 1s;
+        top: 20vw;
+    }
+    
+    &:hover {
+        .cinetic__astronaut {
+            animation: mymove ease-in-out infinite;
             animation-duration: 3s;
             animation-fill-mode: forwards;
         }
-    
-    @keyframes mymove {
-        0% {top: 10vh}
-        50% {top: 13vh}    
-        100% {top: 10vh}    
-        }
     }
+}
+
+@keyframes mymove {
+    0% {top: 20vmin; transform: scale(1) rotate(30deg);}
+    40% {transform: scale(2) rotate(-30deg);}
+    // 50% {top: 15vmin; }
+    60% {top: 15vmin; transform: scale(0.5) rotate(-330deg);}
+    100% {top: 20vmin; transform: scale(1) rotate(-690deg);}
+}
+
+@keyframes cinetic-move {
+    0% {transform: rotate(0deg);}
+    // 49.9% {transform: rotateY(0deg);}
+    // 50% {transform: rotateY(180deg);}
+    100% {transform: rotate(360deg);}
 }

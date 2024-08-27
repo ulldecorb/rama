@@ -27,26 +27,42 @@ body {
     overflow-x: hidden;
 }
 
-.museum {
+.intro {
     @include flex(column, center, center);
     width:100%;
     
     &__background-earth {
-        height: 100vh;
+        height: 130vh;
         width: 100vw;
         background-image: url("http://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf.jpg");
-        background-attachment: fixed;
+        // background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        filter: grayscale(100%) brightness(60%);
+        // filter: grayscale(100%) brightness(60%);
         // margin: 0 auto;
+    }
+
+    &__localitation-1 {
+        height: 15vw;
+        width: 100vw;
+        background: #000;
+        color: #FFF;
+        text-align: center;
+        // margin-top: -20vh;
+        // margin:-40vh 0;
+        // @include flex(column, center, center);
+
+        h3 {
+            font-size: 3em;
+        }
     }
   
     &__background-estelar {
         height: 100vw;
         width:100vw;
-        background-image: url("https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2017/04/the_motion_of_two_million_stars/16900235-1-eng-GB/The_motion_of_two_million_stars_pillars.jpg");
+        // background-image: url("https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2017/04/the_motion_of_two_million_stars/16900235-1-eng-GB/The_motion_of_two_million_stars_pillars.jpg");
+        background-image: url("https://images.theconversation.com/files/314692/original/file-20200211-146714-1yjz3ie.jpg?ixlib=rb-1.1.0&rect=0%2C522%2C3562%2C1778&q=45&auto=format&w=1356&h=668&fit=crop");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -56,15 +72,17 @@ body {
         height:300px;
         width:100vw;
         // margin: 3vh auto;
-        background-color: #4090FF;
+        // background-color: #4090FF;
         overflow: hidden;
     }
+
+
 
     &__blur {
         // background-color: #000;
         position: relative;
         height:300px;
-        width:80vw;
+        width:100vw;
         // overflow: hidden;
         // border: none;
         // border: 2px solid #000;
@@ -87,9 +105,9 @@ body {
             width: 200px;
             position: absolute;
             top: 0;
-            left: 50px;
+            left: 70vw;
             z-index: 1; 
-            transform: rotateY(180deg);
+            // transform: rotateY(180deg);
             animation: mymove infinite;
             animation-duration: 3s;
             transition-timing-function: ease-in;
@@ -106,9 +124,9 @@ body {
         
         .sky {
             height: auto;
-            width: 80vw;
+            width: 100vw;
             filter: blur(2px);
-            background-size: cover;
+            background-size: cover; 
             transition: 0.4s;
         }
         
@@ -120,7 +138,7 @@ body {
             border:4px solid #000;
             position: absolute;
             top: 14vh;
-            left: 820px;
+            left: 60vw;
             @include flex(column, center, center);
             opacity:0;
             padding:5px;
@@ -130,7 +148,7 @@ body {
             &:first-of-type {
                 opacity:1;
                 top: 7vh;
-                left: 320px;
+                left: 55vw;
                 height: 30px;
             }
         }

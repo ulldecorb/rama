@@ -9,16 +9,8 @@ body {
   height: 20vh;
   background-color: darkred;
   color: yellow;
-}
-
-.sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
 }
 
 .content {
@@ -38,42 +30,21 @@ body {
   height: 100vh;
   color: yellow;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .fadeOut {
-  -webkit-animation-name: faderOut;
-          animation-name: faderOut;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: faderOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .fadeIn {
-  -webkit-animation-name: faderIn;
-          animation-name: faderIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes faderOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+  animation-name: faderIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes faderOut {
@@ -84,16 +55,6 @@ body {
     opacity: 0;
   }
 }
-
-@-webkit-keyframes faderIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes faderIn {
   from {
     opacity: 0;
@@ -102,7 +63,6 @@ body {
     opacity: 1;
   }
 }
-
 .back-anchor {
   position: fixed;
   top: 0;
@@ -116,17 +76,9 @@ body {
   margin: 2vh;
   z-index: 2;
   text-align: center;
-  -webkit-text-decoration-color: red;
-          text-decoration-color: red;
+  text-decoration-color: red;
   font-size: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-/*# sourceMappingURL=style.css.map */
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

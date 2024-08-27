@@ -12,15 +12,9 @@ section {
 div {
   height: 70vh;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 a {
@@ -62,17 +56,9 @@ div:nth-child(5), div a:nth-child(5) {
   margin: 2vh;
   z-index: 2;
   text-align: center;
-  -webkit-text-decoration-color: red;
-          text-decoration-color: red;
+  text-decoration-color: red;
   font-size: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-/*# sourceMappingURL=style.css.map */
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
