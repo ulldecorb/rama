@@ -10,16 +10,8 @@ body {
     background-color: darkred;
     color: yellow;
     // text-align: center;  // Wrong UX: Change align on window top
-}
-
-.sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 100%;
-}
-
-.sticky + .content {
-    padding-top: 102px;
 }
 
 .content {
@@ -46,25 +38,25 @@ body {
 
 
 .fadeOut {
-animation-name: faderOut;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+    animation-name: faderOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .fadeIn {
-animation-name: faderIn;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+    animation-name: faderIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes faderOut {
-from {opacity: 1}
-to {opacity: 0;}
+    from {opacity: 1}
+    to {opacity: 0;}
 }
 
 @keyframes faderIn {
-from {opacity: 0}
-to {opacity: 1;}
+    from {opacity: 0}
+    to {opacity: 1;}
 }
 
 .back-anchor {

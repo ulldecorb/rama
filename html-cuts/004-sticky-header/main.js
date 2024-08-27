@@ -7,7 +7,7 @@ let startSticky = header.offsetTop;
 let opacitySwitch = opacitySwitchNode.offsetTop;
 
 function stickHeaderOn() {
-  window.pageYOffset > startSticky ? header.classList.add("sticky") : header.classList.remove("sticky");
+  // window.pageYOffset > startSticky ? header.classList.add("sticky") : header.classList.remove("sticky");
     
   if (window.pageYOffset > opacitySwitch && window.pageYOffset < opacitySwitch + 200) {
     header.classList.contains("fadeOut") && header.classList.replace("fadeOut", "fadeIn");

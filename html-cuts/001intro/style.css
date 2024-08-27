@@ -10,22 +10,12 @@ body {
 }
 
 .intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-
 .intro__background-earth {
   height: 130vh;
   width: 100vw;
@@ -34,7 +24,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .intro__localitation-1 {
   height: 15vw;
   width: 100vw;
@@ -42,11 +31,9 @@ body {
   color: #FFF;
   text-align: center;
 }
-
 .intro__localitation-1 h3 {
   font-size: 3em;
 }
-
 .intro__background-estelar {
   height: 100vw;
   width: 100vw;
@@ -56,37 +43,28 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .intro .strip {
   height: 300px;
   width: 100vw;
   overflow: hidden;
 }
-
 .intro__blur {
   position: relative;
   height: 300px;
   width: 100vw;
 }
-
 .intro__blur:hover .astronaut {
-  -webkit-filter: blur(4px);
-          filter: blur(4px);
+  filter: blur(4px);
 }
-
 .intro__blur:hover .sky {
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
+  filter: blur(0px);
 }
-
 .intro__blur:hover .text:last-of-type {
   opacity: 1;
 }
-
 .intro__blur:hover .text:first-of-type {
   opacity: 0;
 }
-
 .intro__blur .astronaut {
   height: 200px;
   width: 200px;
@@ -94,30 +72,12 @@ body {
   top: 0;
   left: 70vw;
   z-index: 1;
-  -webkit-animation: mymove infinite;
-          animation: mymove infinite;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-transition: 0.4s;
+  animation: mymove infinite;
+  animation-duration: 3s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: forwards;
   transition: 0.4s;
 }
-
-@-webkit-keyframes mymove {
-  0% {
-    top: 10vh;
-  }
-  50% {
-    top: 13vh;
-  }
-  100% {
-    top: 10vh;
-  }
-}
-
 @keyframes mymove {
   0% {
     top: 10vh;
@@ -129,17 +89,13 @@ body {
     top: 10vh;
   }
 }
-
 .intro__blur .sky {
   height: auto;
   width: 100vw;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
   background-size: cover;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .intro__blur .text {
   height: 60px;
   width: 120px;
@@ -149,55 +105,33 @@ body {
   position: absolute;
   top: 14vh;
   left: 60vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   padding: 5px;
   text-align: center;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .intro__blur .text:first-of-type {
   opacity: 1;
   top: 7vh;
   left: 55vw;
   height: 30px;
 }
-
 .intro__cinetic {
   background-color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 300px;
   width: 80vw;
   margin: 3vh auto;
   overflow: hidden;
   z-index: 3;
 }
-
 .intro__cinetic .cinetic__cinetic-lines {
   height: 80vh;
   width: 100vw;
@@ -205,57 +139,29 @@ body {
   background-position: cover;
   margin: -20vh 0;
   z-index: 1;
-  -webkit-animation: cinetic-move infinite;
-          animation: cinetic-move infinite;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation: cinetic-move infinite;
+  animation-duration: 1s;
 }
-
-@-webkit-keyframes cinetic-move {
-  0% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  49.9% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  50% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  }
-  100% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  }
-}
-
 @keyframes cinetic-move {
   0% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
   49.9% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
   50% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    transform: rotateY(180deg);
   }
   100% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    transform: rotateY(180deg);
   }
 }
-
 .intro__cinetic .cinetic__astronaut {
   max-height: 20vh;
   width: auto;
   position: absolute;
   margin-top: 0;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
   z-index: 2;
 }
 
@@ -269,11 +175,9 @@ body {
   cursor: pointer;
   font-size: 2em;
 }
-
 .info-bar__button span {
   color: red;
 }
-
 .info-bar__button .sidenav {
   height: 100%;
   width: 0;
@@ -281,28 +185,23 @@ body {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   overflow-x: hidden;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-top: 60px;
   border-left: 2px solid red;
 }
-
 .info-bar__button .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .info-bar__button .sidenav a:hover {
   color: #f1f1f1;
 }
-
 .info-bar__button .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -310,7 +209,6 @@ body {
   font-size: 36px;
   color: red;
 }
-
 @media screen and (max-height: 450px) {
   .info-bar__button .sidenav {
     padding-top: 15px;
@@ -323,25 +221,19 @@ body {
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 ::-webkit-scrollbar-thumb {
   background: rgba(126, 126, 126, 0.2);
   border-radius: 10px;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  transition-duration: 1s;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: #aaaaaa;
+  background: rgb(170, 170, 170);
   background-color: red;
 }
-
 ::-webkit-scrollbar-thumb:active {
-  background: #aaaaaa;
+  background: rgb(170, 170, 170);
   background-color: red;
 }
-
 ::-webkit-scrollbar-track {
   background: rgba(75, 75, 75, 0.582);
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

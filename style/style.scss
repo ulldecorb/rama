@@ -1,7 +1,8 @@
 .landing {
     height: 100vh;
     width: 100vw;
-    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/potw2039a.jpg");
+    // background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/potw2039a.jpg");
+    background-image: url("https://news.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/main_image_star-forming_region_carina_nircam_final-5mb_72dpi.jpg");
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -103,39 +104,39 @@
 
 }
 
-@-webkit-keyframes rotating {
+@keyframes rotating {
     from{
-        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to{
-        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
-@-webkit-keyframes rotating-2 {
+@keyframes rotating-2 {
     from{
-        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
     to{
-        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 }
 
-@-webkit-keyframes rotating-3 {
+@keyframes rotating-3 {
     from{
-        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
     }
     to{
-        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
     }
 }
 
-@-webkit-keyframes rotating-4 {
+@keyframes rotating-4 {
     from{
-        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
     }
     to{
-        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
     }
 }
 
@@ -146,7 +147,7 @@
         width: 50px;
         height: 50px;
         border: 1px solid red;
-        -webkit-animation: rotating 4s linear infinite;
+        animation: rotating 4s linear infinite;
 }
 
 .rotating-2 {
@@ -156,7 +157,7 @@
         width: 50px;
         height: 50px;
         border: 1px solid red;
-        -webkit-animation: rotating-2 4s linear infinite;
+        animation: rotating-2 4s linear infinite;
 }
     
 .rotating-3 {
