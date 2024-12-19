@@ -58,6 +58,7 @@
   transform-style: preserve-3d;
   transform: perspective(1000px);
 }
+
 .main__item {
   transition: 0.5s;
   text-decoration: none;
@@ -119,6 +120,7 @@
   width: 100%;
   text-align: center;
 }
+
 .footer__definition {
   position: absolute;
   color: antiquewhite;

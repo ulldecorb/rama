@@ -3,12 +3,8 @@ body, html {
   margin: 0;
 }
 
-.bebop {
-  /* The image used */
-  background-image: url("https://media.revistagq.com/photos/60c0cbddea95b3cb11bfb2e0/master/pass/cowboy%20bebop.jpeg");
-  /* Set a specific height */
+.parallax {
   height: 100%;
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,12 +13,14 @@ body, html {
 
 .jack-image {
   background-image: url("https://cinemagavia.es/wp-content/uploads/2020/04/Samurai-Jack.1.jpg");
-  height: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.bebop {
+  background-image: url("https://media.revistagq.com/photos/60c0cbddea95b3cb11bfb2e0/master/pass/cowboy%20bebop.jpeg");
+}
+
+.sin-city {
+  background-image: url("https://media.revistagq.com/photos/60c0cbddea95b3cb11bfb2e0/master/pass/cowboy%20bebop.jpeg");
 }
 
 .back-anchor {

@@ -9,22 +9,24 @@
     <title>Rama Web Comic</title>
 </head>
 <body>
-    <section class="museum">
+    <section class="intro">
         
-        <div class="museum__strip-background"></div>
-        <div class="museum__background"></div>
-        
-        <div class="museum__lantern strip"
-        id="torch-strip"
-        onmouseover="torch.display = 'block'"
-        onmouseout="torch.display = 'none'"
-        onmousemove="followTorch()">
-            <p>imagina una ciudad de Rama</p>
-        </div>  
-        <div id="torch" class="museum__torch">
+        <div id="earth" class="intro__background-earth"></div>
+
+        <div class="intro__localitation-1"><h3>LA TIERRA<br>Neo-York<br>Año 2131</h3></div>        
+        <div id="cinetic" class="intro__cinetic strip">
+            <img src="https://i.pinimg.com/originals/a0/26/1b/a0261b885cfba5a65c675c33327acf5a.png" 
+            alt="astronaut"
+            class="cinetic__astronaut">
+            <img src="https://motionarray.imgix.net/preview-296215-2MHk23farE-high_0000.jpg" 
+            alt="astronaut"
+            id="cinetic__cinetic-lines"
+            class="cinetic__cinetic-lines">
         </div>
 
-        <div class="museum__blur strip">
+        <div id="galaxy" class="intro__background-estelar"></div>
+
+        <div id="blur" class="intro__blur strip">
             <img src="https://i.pinimg.com/originals/a0/26/1b/a0261b885cfba5a65c675c33327acf5a.png" 
             alt="astronaut"
             class="astronaut">
@@ -34,53 +36,25 @@
             <div class="text">Dios...</div>
             <div class="text">Es tan <strong>hermoso</strong>...</div>
         </div>
-        
-        <div class="museum__cinetic strip">
-            <img src="https://i.pinimg.com/originals/a0/26/1b/a0261b885cfba5a65c675c33327acf5a.png" 
-            alt="astronaut"
-            class="cinetic__astronaut">
-            <img src="https://motionarray.imgix.net/preview-296215-2MHk23farE-high_0000.jpg" 
-            alt="astronaut"
-            class="cinetic__cinetic-lines">
-        </div>
-
-        <div class="museum__tooltip"></div>
-        <div class="museum__true-lantern">
-            <div class="lantern"></div>
-            
-        </div>
-        
-        </div>
     </section>
     <section class="info-bar__button" id="info-bar__button">
         <div id="sidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
+            <a href="../../index.html">Back to Main</a>
+            <a href="#earth">Earth</a>
+            <a href="#cinetic">Cinetic Lines</a>
+            <a href="#galaxy">Galaxy</a>
+            <a href="#blur">Blur</a>
         </div>
         <span onclick="openNav()">
             &#9776;
-            <div class="burger-line" id="1"></div>
-            <div class="burger-line"></div>
-            <div class="burger-line"></div>
         </span>
     </section>
 
 
 
-    <!-- <div class="info-bar">Hello world</div> -->
-    <script type="text/javascript" src="./main.js"></script>
-    <!-- <script>
-        $(document).ready(function(){
-            $(".info-bar__button").click(function(){
-                $(".info-bar").animate({right: "toggle"} );
-                $("#1").animate({transform:'rotateX(45deg)'}, "slow");
-                $("#2").animate({opacity:'0'}, "slow");
-                $(".burger-line:nth-child(3)").animate({transform:'rotateX(-45deg)'}, "slow");
-        });
-    });
-    </script> -->
-
 </body>
+<script type="text/javascript" src="./main.js"></script>
 </html>
 
 

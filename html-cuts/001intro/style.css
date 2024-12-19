@@ -1,3 +1,9 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -71,9 +77,7 @@ body {
 }
 .museum .strip {
   height: 300px;
-  width: 80vw;
-  margin: 3vh auto;
-  background-color: #4090FF;
+  width: 100vw;
   overflow: hidden;
 }
 .museum__lantern {
@@ -89,7 +93,7 @@ body {
 .museum__blur {
   position: relative;
   height: 300px;
-  width: 80vw;
+  width: 100vw;
 }
 .museum__blur:hover .astronaut {
   filter: blur(4px);
@@ -108,7 +112,7 @@ body {
   width: 200px;
   position: absolute;
   top: 0;
-  left: 50px;
+  left: 70vw;
   z-index: 1;
   transform: rotateY(180deg);
   animation: mymove infinite;
@@ -153,10 +157,10 @@ body {
   text-align: center;
   transition: 0.4s;
 }
-.museum__blur .text:first-of-type {
+.museum__blur .text:first-of-type 
   opacity: 1;
   top: 7vh;
-  left: 320px;
+  left: 55vw;
   height: 30px;
 }
 .museum__cinetic {
@@ -178,6 +182,8 @@ body {
   background-position: cover;
   margin: -20vh 0;
   z-index: 1;
+  animation: cinetic-move infinite;
+  animation-duration: 1s;
 }
 .museum__cinetic .cinetic__cinetic-lines:hover {
   animation: cinetic-move infinite;
@@ -275,21 +281,20 @@ body {
 span {
   color: red;
 }
-
-.sidenav {
+.info-bar__button .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  border-left: 2px solid red;
 }
-
-.sidenav a {
+.info-bar__button .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -297,23 +302,21 @@ span {
   display: block;
   transition: 0.3s;
 }
-
-.sidenav a:hover {
+.info-bar__button .sidenav a:hover {
   color: #f1f1f1;
 }
-
-.sidenav .closebtn {
+.info-bar__button .sidenav .closebtn {
   position: absolute;
   top: 0;
   left: 0;
   font-size: 36px;
+  color: red;
 }
-
 @media screen and (max-height: 450px) {
-  .sidenav {
+  .info-bar__button .sidenav {
     padding-top: 15px;
   }
-  .sidenav a {
+  .info-bar__button .sidenav a {
     font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
