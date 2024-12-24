@@ -1,0 +1,17 @@
+@media (max-width: 650px) {
+    .landing {
+        .header {
+            &__title {
+                font-size: 5rem;
+            }
+
+            &__subtitle {
+                font-size: 1rem;
+            }
+        }
+    }
+    
+    .footer__definition {
+        font-size: 1rem;
+    }
+}
